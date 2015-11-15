@@ -21,7 +21,7 @@ SC_MODULE(stim_polynom)
     // calculate values in range [a, b)
     double a = -5; // begin of range
     double b = 5;  // end of range 
-    int c = 100;
+    int c = 20;
 
     double incr = (b-a)/c;
     
