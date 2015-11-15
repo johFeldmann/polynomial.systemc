@@ -12,21 +12,35 @@
 #define POLY_H
 #include "systemc.h"
 
+// simple polynomial for easy debugging
+// configurable degree of polynomial
+const unsigned int poly_degree = 2;
 
+// configurable coefficients (index equal to associated power of x)
+const double poly_coeff[poly_degree + 1] = {
+  0,
+  0,
+  1
+};
+
+/*
+// more complex polynomial for extensive testing
 // configurable degree of polynomial
 const unsigned int poly_degree = 7;
 
 // configurable coefficients (index equal to associated power of x)
 const double poly_coeff[poly_degree + 1] = {
-	8.34,
-	20.0,
-	1.64,
-	-28.73,
-	92.429,
-	48.902,
-	98.902,
-	34.565
+  8.34,
+  20.0,
+  1.64,
+  -28.73,
+  92.429,
+  48.902,
+  98.902,
+  34.565
 };
+*/
+
 
 // TODO: define the functions you need for the module here
 
