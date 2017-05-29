@@ -11,3 +11,15 @@
 #include "poly.h"
 
 // TODO: implement your function(s) for your Module here
+
+void poly::Poly_Calc()
+{
+    double temp = 0.0;
+    double X_temp = 1.0;
+    for(int i = 0; i <= poly_degree; i++)
+    {
+       temp += poly_coeff[i] * X_temp;
+       X_temp *= X;
+    }
+    Y = temp;
+}

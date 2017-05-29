@@ -52,4 +52,21 @@ const double poly_coeff[poly_degree + 1] = {
 * Please use functions to keep this module definition as simple and small as possible.
 */
 
+SC_MODULE(poly)
+{
+  sc_in<double> X;
+  sc_out<double> Y;
+  sc_in<bool> Clk;
+
+  void Poly_Calc();
+
+  // create module
+  SC_CTOR(poly)
+  {
+    SC_METHOD(Poly_Calc);
+    sensitive << Clk.pos();
+    dont_initialize();
+  }
+};
+
 #endif // POLY_H

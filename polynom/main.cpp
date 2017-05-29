@@ -28,6 +28,10 @@ int sc_main(int argc, char* argv[])
 // TODO: use your module here
 // Input  Signal: XSig
 // Output Signal: YSig
+  poly Poly1("Polynom");
+  Poly1.X(XSig);
+  Poly1.Y(YSig);
+  Poly1.Clk(TestClk);
 
   mon_polynom Monitor1("Monitor");
   Monitor1.X(XSig);			// Module Input X
