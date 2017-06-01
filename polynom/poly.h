@@ -64,7 +64,7 @@ SC_MODULE(poly)
   SC_CTOR(poly)
   {
     SC_METHOD(Poly_Calc);
-    sensitive << Clk.pos();
+    sensitive << X;
     dont_initialize();
   }
 };
